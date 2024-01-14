@@ -1,0 +1,21 @@
+# Created at 2024-01-08T18:49:51.206
+java.lang.NoSuchMethodError: 'void org.testng.TestRunner.<init>(org.testng.internal.IConfiguration, org.testng.ISuite, org.testng.xml.XmlTest, boolean, java.util.Collection, java.util.List)'
+	at com.qmetry.qaf.automation.testng.TestRunnerFactory.newTestRunner(TestRunnerFactory.java:60)
+	at org.testng.ITestRunnerFactory.newTestRunner(ITestRunnerFactory.java:52)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:720)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:224)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:116)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1375)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1349)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1191)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+

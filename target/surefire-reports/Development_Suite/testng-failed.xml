@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="tests" name="Failed suite [Development_Suite]" verbose="0">
+  <listeners>
+    <listener class-name="basePackage.utilities.ITestListenerImpl"/>
+    <listener class-name="basePackage.runner.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="10" parallel="tests" name="ChromeTest(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="basePackage.runner.TestRunner">
+        <parameter name="positiony" value="0"/>
+        <parameter name="positionx" value="100"/>
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setupBrowser"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="endBrowser"/>
+          <include name="setUpClassLog"/>
+        </methods>
+      </class> <!-- basePackage.runner.TestRunner -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Development_Suite] -->

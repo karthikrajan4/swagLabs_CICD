@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="10" name="Development_Suite" parallel="tests">
+	<listeners>
+		<listener
+			class-name="basePackage.utilities.ITestListenerImpl" />
+		<listener
+			class-name="basePackage.runner.AnnotationTransformer" />
+	</listeners>
+	
+	<test name="ChromeTest">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="basePackage.runner.TestRunner">
+				<parameter name="positionx" value="100" />
+				<parameter name="positiony" value="0" />
+			</class>
+		</classes>
+	</test>
+</suite>
