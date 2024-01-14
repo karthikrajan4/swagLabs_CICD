@@ -239,6 +239,7 @@ public class ExecutionMethods extends CommonFunctions {
 			System.out.println(totalValue);
 			ExcelUtil.writeData("Total Amount", totalValue);
 			resultArr[i++] = click("Sel_swagLabs_checkOut_overView_finish_button", logInfo);
+			System.out.println("Completing the ordering flow");
 			result = !Arrays.asList(resultArr).contains(false);
 			return result;
 		} catch (Exception e) {
