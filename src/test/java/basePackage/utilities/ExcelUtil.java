@@ -49,7 +49,7 @@ public class ExcelUtil {
 	static String excelLocation = System.getProperty("user.dir") + "\\Excel\\Master.xlsx";
 	private static final Lock lock = new ReentrantLock();
 
-	// OLD
+	
 	public static Workbook openExcel() throws IOException {
 		lock.lock();
 		try {
@@ -91,7 +91,6 @@ public class ExcelUtil {
 				}
 			}
 
-			// OLD
 			excelSheet = excelBook.getSheetAt(sheetID);
 
 			// Iterate row and column and get count on the selected sheet

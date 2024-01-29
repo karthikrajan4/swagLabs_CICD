@@ -206,7 +206,6 @@ public class CommonFunctions extends ITestListenerImpl {
 					if (prop.getProperty("CICD").equalsIgnoreCase("Y")) {
 						WebDriverManager.chromedriver().setup();
 					} else if (prop.getProperty("BrowserDirectPath").equalsIgnoreCase("Y")) {
-
 						driverPath = "C:\\Program Files\\Selenium ChromeDriver\\120.0.6099.62\\chromedriver.exe";
 						System.setProperty("webdriver.chrome.driver", driverPath);
 					} else if (prop.getProperty("SeleniumManager").equalsIgnoreCase("Y")) {
