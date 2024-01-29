@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(plugin = { "pretty", "html:target/site/cucumber-pretty", "json:target/cucumber/cucumber.json",
 		"basePackage.steps.StepListener",
 		"timeline:test-output-thread/" }, features = { "src/test/java/basePackage/features" }, glue = {
-				"basePackage/steps" }, monochrome = true, publish = true, tags = "@swagLabFullFlow ")
+				"basePackage/steps" }, monochrome = true, publish = true, tags = "@swagLabFullFlow")
 
 public class TestRunner extends CustomAbstractTestNGCucumberTest {
 	@BeforeClass(alwaysRun = true)

@@ -1,6 +1,6 @@
 Feature: To check the full flow functionality of SwagLabs order placement
 
-@swagLabFullFlow 
+@swagLabFullFlow
 Scenario Outline: <ScenarioID>
 
 	Given User launches the browser with "swagLabs_URL" website

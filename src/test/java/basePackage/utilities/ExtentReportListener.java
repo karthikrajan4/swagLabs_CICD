@@ -78,7 +78,7 @@ public class ExtentReportListener {
 			}
 			// else { // deleteFilesInDirectory(directoryLocation);
 			// FileUtils.cleanDirectory(new File(directoryLocation)); }
-			reportLocation = directoryLocation + File.separator + "Complete Report.html";
+			reportLocation = directoryLocation + File.separator + "Complete_Report.html";
 			System.out.println("Report is generated in " + reportLocation);
 			report = new ExtentSparkReporter(reportLocation);
 			report.config().setReportName(reportName);
