@@ -100,22 +100,6 @@ public class StepDefinitions extends ExecutionMethods {
 		}
 	}
 
-	@Given("User launches the browser with {string} website")
-	public void user_launches_the_browser_with_website(String url) throws Throwable {
-		int i = 0;
-		Boolean resultArr[] = new Boolean[100];
-		boolean result = false;
-		try {
-			this.beforeStep();
-			resultArr[i++] = userLoadsURL(url, extentStep);
-			result = !Arrays.asList(resultArr).contains(false);
-			this.afterStep(result);
-		} catch (Exception e) {
-			e.printStackTrace();
-			this.afterStep(result, e);
-		}
-	}
-
 	// For Tools QA
 	@Then("User clicks {string} menu")
 	public void user_clicks_the_mainMenu(String mainMenu) throws Throwable {
@@ -126,6 +110,22 @@ public class StepDefinitions extends ExecutionMethods {
 			this.beforeStep();
 			resultArr[i++] = user_clicks_toolsQA_mainMenu(mainMenu, extentStep);
 			resultArr[i++] = user_clicks_subMenu_and_perform(extentStep);
+			result = !Arrays.asList(resultArr).contains(false);
+			this.afterStep(result);
+		} catch (Exception e) {
+			e.printStackTrace();
+			this.afterStep(result, e);
+		}
+	}
+
+	@Given("User launches the browser with {string} website")
+	public void user_launches_the_browser_with_website(String url) throws Throwable {
+		int i = 0;
+		Boolean resultArr[] = new Boolean[100];
+		boolean result = false;
+		try {
+			this.beforeStep();
+			resultArr[i++] = userLoadsURL(url, extentStep);
 			result = !Arrays.asList(resultArr).contains(false);
 			this.afterStep(result);
 		} catch (Exception e) {

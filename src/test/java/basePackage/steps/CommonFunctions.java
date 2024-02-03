@@ -737,7 +737,7 @@ public class CommonFunctions extends ITestListenerImpl {
 			}
 		} catch (StaleElementReferenceException staleexcep) {
 			staleexcep.printStackTrace();
-			MyLogger.info("stele element exception handled");
+			MyLogger.info("stale element exception handled");
 			if (prop.getProperty(ele).startsWith("Ext")) {
 				if (compwait(ele, logInfo)) {
 					JavascriptExecutor jse = (JavascriptExecutor) getDriver();
